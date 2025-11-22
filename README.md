@@ -4,13 +4,13 @@ A simplified, production-ready Flutter wrapper for OpenTelemetry that makes obse
 
 ## Features
 
-- 🚀 **Automatic HTTP instrumentation** - Trace all HTTP requests with zero code changes
-- 📊 **Custom span creation** - Full control over manual instrumentation
-- 🔥 **Error tracking** - Automatic exception capture and reporting
-- 🌐 **Distributed tracing** - W3C trace context propagation
-- 🎯 **Type-safe API** - Strongly typed configuration and attributes
-- 📱 **Flutter-optimized** - Built specifically for Flutter/Dart ecosystem
-- 🔧 **Developer-friendly** - Minimal boilerplate, maximum clarity
+- **Automatic HTTP instrumentation** - Trace all HTTP requests with zero code changes
+- **Custom span creation** - Full control over manual instrumentation
+- **Error tracking** - Automatic exception capture and reporting
+- **Distributed tracing** - W3C trace context propagation
+- **Type-safe API** - Strongly typed configuration and attributes
+- **Flutter-optimized** - Built specifically for Flutter/Dart ecosystem
+- **Developer-friendly** - Minimal boilerplate, maximum clarity
 
 ## Installation
 
@@ -41,7 +41,7 @@ void main() async {
       },
       environment: 'production',
       version: '1.0.0',
-      sampleRate: 1.0, // Sample 100% of traces
+      sampleRate: 1.0,
       debug: false,
     ),
   );
@@ -255,21 +255,21 @@ Check out the `/example` directory for a complete Flutter app demonstrating:
 | Feature | flutter_otel_sdk | opentelemetry-dart |
 |---------|------------------|-------------------|
 | Setup complexity | 5 lines | 30+ lines |
-| HTTP auto-instrumentation | ✅ Built-in | ❌ Manual |
-| Error tracking | ✅ Built-in | ❌ Manual |
-| Type-safe attributes | ✅ Yes | ⚠️ Partial |
-| Flutter-specific | ✅ Yes | ❌ General Dart |
+| HTTP auto-instrumentation | Built-in | Manual |
+| Error tracking | Built-in | Manual |
+| Type-safe attributes | Yes | Partial |
+| Flutter-specific | Yes | General Dart |
 | Learning curve | Low | High |
 
 ## Contributing
 
 Contributions welcome! Areas for improvement:
 
-- [ ] Additional HTTP client support (Dio, etc.)
-- [ ] Database query instrumentation
-- [ ] Navigation/routing instrumentation
-- [ ] Performance metrics
-- [ ] Custom exporters
+- Additional HTTP client support (Dio, etc.)
+- Database query instrumentation
+- Navigation/routing instrumentation
+- Performance metrics
+- Custom exporters
 
 ## Testing
 
@@ -282,20 +282,6 @@ cd example
 flutter run
 ```
 
-## License
-
-MIT License - see LICENSE file for details
-
 ## Acknowledgments
 
 Built on top of the excellent [opentelemetry-dart](https://pub.dev/packages/opentelemetry) package.
-
-## Support
-
-- 📖 [Documentation](https://github.com/yourusername/flutter_otel_sdk)
-- 🐛 [Issue Tracker](https://github.com/yourusername/flutter_otel_sdk/issues)
-- 💬 [Discussions](https://github.com/yourusername/flutter_otel_sdk/discussions)
-
----
-
-Made with ❤️ for the Flutter and OpenTelemetry communities
