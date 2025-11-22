@@ -1,0 +1,20 @@
+name: flutter_otel_sdk
+description: A simplified Flutter wrapper for OpenTelemetry instrumentation with automatic tracing, custom spans, and error tracking.
+version: 0.1.0
+homepage: https://github.com/yourusername/flutter_otel_sdk
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.1.0
+  opentelemetry: ^0.18.0
+  opentelemetry_dart: ^0.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  mockito: ^5.4.0
